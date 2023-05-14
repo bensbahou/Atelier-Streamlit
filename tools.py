@@ -6,7 +6,7 @@ st.write(
     unsafe_allow_html=True,
 )
 st.write("<style>h1 {font-size: 2.5rem;}</style>", unsafe_allow_html=True)
-st.title("Tools and accounts for : Data Science Web-apps Workshop")
+st.title("Tools and accounts needed for : Data Science Web-apps Workshop")
 st.info(
     "It's always better to install the tools before the workshop day. but if you can't, it's still okay. we'll take the time to insure that everyone has the tools installed."
 )
