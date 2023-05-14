@@ -16,11 +16,15 @@ st.subheader("2. Install Python")
 st.write("You can install Python from here: https://www.python.org/downloads/")
 with st.expander("Check if Python is installed"):
     st.write(
-        "To check if Python is installed or not, run the following command in your terminal:")
+        "To check if Python is installed or not, run the following command in your terminal:"
+    )
     st.code("python --version")
     st.write(
-        "If you see the version of Python installed, then it is installed successfully.")
-    st.write("If you see an error, then it is not installed. In that case, you can install it from the link above.")
+        "If you see the version of Python installed, then it is installed successfully."
+    )
+    st.write(
+        "If you see an error, then it is not installed. In that case, you can install it from the link above."
+    )
 
 # Third step is to install streamlit
 st.subheader("3. Install Streamlit")
@@ -28,23 +32,28 @@ st.write("You can install Streamlit by running the following command in your ter
 st.code("pip install streamlit")
 with st.expander("Check if Streamlit is installed"):
     st.write(
-        "To check if Streamlit is installed or not, run the following command in your terminal:")
+        "To check if Streamlit is installed or not, run the following command in your terminal:"
+    )
     st.code("streamlit --version")
     st.write(
-        "If you see the version of Streamlit installed, then it is installed successfully.")
-    st.write("If you see an error, then it is not installed. In that case, you can install it from the link above.")
+        "If you see the version of Streamlit installed, then it is installed successfully."
+    )
+    st.write(
+        "If you see an error, then it is not installed. In that case, you can install it from the link above."
+    )
 
 # Fourth step is to create a streamlit app
 st.subheader("4. Create a Streamlit app")
 st.write("Create a simple python file with the some code")
 with st.expander("See example of a simple hello world app"):
-
-    st.code("""
+    st.code(
+        """
 	import streamlit as st
 
 	st.title("Hello World")
 	st.write("This is a simple hello world app")
-	""")
+	"""
+    )
 
 st.write("Save the file as filename.py")
 
@@ -60,12 +69,15 @@ st.subheader("6. Install Git")
 st.write("You can install Git from here: https://git-scm.com/downloads")
 with st.expander("Check if Git is installed"):
     st.write(
-        "To check if Git is installed or not, run the following command in your terminal:")
+        "To check if Git is installed or not, run the following command in your terminal:"
+    )
     st.code("git --version")
     st.write(
-        "If you see the version of Git installed, then it is installed successfully.")
+        "If you see the version of Git installed, then it is installed successfully."
+    )
     st.write(
-        "If you see an error, then it is not installed. In that case, you can install it from the link above.")
+        "If you see an error, then it is not installed. In that case, you can install it from the link above."
+    )
 
 # Seventh step is to create a GitHub account
 st.subheader("7. Create a GitHub account if you don't have one.")
@@ -82,7 +94,9 @@ with st.expander("See example of creating a new repository"):
 
 # Ninth step is to clone the repository
 st.subheader("9. Clone the repository")
-st.write("You can clone the repository by running the following command in your terminal:")
+st.write(
+    "You can clone the repository by running the following command in your terminal:"
+)
 st.code("git clone <link> ")
 
 # Tenth step is to add the streamlit app to the repository

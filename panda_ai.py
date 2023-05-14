@@ -26,8 +26,13 @@ prompt = st.text_input("Enter Prompt", "which sex was most likely to have surviv
 
 # add button to run pandas_ai
 if st.button("Run", key="run1"):
-    response = pandas_ai.run(df, prompt=prompt)
-    st.write(response)
+    # add a loading indicator
+    with st.spinner("Running..."):
+        try:
+            response = pandas_ai.run(df, prompt=prompt)
+            st.write(response)
+        except Exception as e:
+            st.error(e)
 
 # create some example prompts
 st.subheader("Prompts to try out")
@@ -38,6 +43,7 @@ st.code("Is there any correlation between class and survival rate?")
 st.code("calculate the survival rate for each sex")
 st.code("calculate the survival rate for each class")
 st.code("was older or younger people more likely to survive?")
+st.code("Chart the survival rate for each class")
 
 men = df[df["Sex"] == "male"]
 women = df[df["Sex"] == "female"]
