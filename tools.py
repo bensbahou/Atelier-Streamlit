@@ -1,8 +1,12 @@
 # list of the necessary tools for the project
 import streamlit as st
 
-
-st.title("Tools and accounts for the workshop")
+st.write(
+    "<style>div.row-widget.stButton > button:first-child {width: 100%;  }</style>",
+    unsafe_allow_html=True,
+)
+st.write("<style>h1 {font-size: 2.5rem;}</style>", unsafe_allow_html=True)
+st.title("Tools and accounts for : Data Science Web-apps Workshop")
 st.info(
     "It's always better to install the tools before the workshop day. but if you can't, it's still okay. we'll take the time to insure that everyone has the tools installed."
 )
@@ -82,3 +86,7 @@ st.write(
     "I believe the above tools are available for Linux and Mac users. but there may be some differences in the installation process."
 )
 st.write("Please refer to the official documentation of each tool for more details.")
+
+# button with full width
+if st.button("If you have everything ready, click here!"):
+    st.balloons()
