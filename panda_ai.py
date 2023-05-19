@@ -28,7 +28,10 @@ st.title("📊Chat With Data")
 st.subheader("This app is using PandasAI to chat with data")
 
 # add file uploader to load csv file dataset
-file = st.file_uploader("Upload Dataset", type=["csv"])
+file = st.file_uploader(
+    "Upload Dataset or get a sample from here : https://www.kaggle.com/datasets/unsdsn/world-happiness?resource=download",
+    type=["csv"],
+)
 
 # read the data from the file if the file is uploaded
 if file is not None:
